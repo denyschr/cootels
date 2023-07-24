@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li, ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  font-size: inherit;
+}
+
+p{
+  margin: 0;
+}
+
+button{
+  border: none;
+  padding: 0;
+}
+
+body{
+  min-width: 320px;
+  overflow-x: hidden;
+  @extend %ir-regular;
+}
+
+.container{
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.title{
+  @extend %mr-semibold;
+  color: #192252;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: -0.36px;
+  margin-bottom: 24px;
+}
+
+.text{
+  color: #848FAC;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.btn-link{
+  display: inline-block;
+  @extend %ir-medium;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #0E1734;
+  transition: .3s ease;
+  &:hover{
+    background-color: #0e1734e3;
+  }
+}
+
+.section-page{
+  padding: 80px 0;
+}
+
+.hero__btn-link, .about__btn-link, .rooms__btn-link, .booking__btn-link{
+  padding: 16px 32px;
+}

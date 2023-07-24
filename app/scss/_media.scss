@@ -1,0 +1,312 @@
+@media (max-width: 991px) {
+	.hero{
+		&__content{
+			max-width: 440px;
+		}
+		&__title{
+			font-size: 44px;
+			margin: 0 0 12px;
+		}
+	}
+}
+@media (max-width: 876px) {
+	.section-page{
+		padding: 50px 0;
+	}
+	.title{
+		font-size: 34px;
+		margin-bottom: 12px;
+	}
+	.hero{
+		&__content{
+			max-width: 390px;
+		}
+		&__title{
+			font-size: 40px;
+		}
+	}
+	.rooms__top{
+		margin: 0 auto 50px;
+	}
+	.booking{
+		&__inner{
+			flex-direction: column;
+			justify-content: start;
+		}
+		&__content{
+			margin: 0 0 40px;
+			max-width: 100%;
+			text-align: center;
+		}
+		&__subtitle{
+			margin-bottom: 8px;
+		}
+		&__text{
+			max-width: 660px;
+			margin-bottom: 20px;
+		}
+		&__block-link{
+			justify-content: center;
+		}
+		&__accordion{
+			max-width: 100%;
+		}
+	}
+	.testimony{
+		padding: 0 0 40px;
+	}
+}
+
+@media (max-width: 800px) {
+	.title{
+		font-size: 30px;
+	}
+	.hero{
+		&__inner{
+			flex-direction: column-reverse;
+			justify-content: start;
+		}
+		&__content{
+			max-width: 100%;
+			margin-right: 0;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+		}
+		&__text{
+			max-width: 650px;
+			margin: 0 auto 20px;
+		}
+		&__btn-link{
+			margin: 0 auto;
+		}
+		&__box{
+			margin-bottom: 25px;
+		}
+	}
+	.about__img{
+		max-width: 340px;
+	}
+	.benefits__img{
+		max-width: 340px;
+	}
+	.rooms__list{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.booking{
+		padding: 0 0 50px;
+	}
+	.footer__menu{
+		gap: 70px;
+	}
+}
+
+@media (max-width: 676px) {
+	body.lock{
+		overflow: hidden;
+	}
+	.header{
+		&__burger{
+			display: block;
+		}
+		&__burger.menu-open::before{
+			transform: rotate(45deg);
+			top: 13px;
+		}
+		&__burger.menu-open span{
+			transform: rotate(-45deg);
+			bottom: 18px;
+		}
+		&__burger.menu-open::after{
+			transform: scale(0);
+		}
+		&__btn-link{
+			display: none;
+		}
+	}
+	.menu{
+		position: absolute;
+		background-color: #fff;
+		padding: 100px 55px 0;
+		width: 100%;
+		top: 0;
+		transform: translateY(-100%);
+		z-index: 1;
+		height: 103vh;
+		transition: .3s ease;
+		&__list{
+			flex-direction: column;
+			text-align: center;
+			&-link{
+				font-size: 40px;
+			}
+		}
+		&__list-item:last-child{
+			display: inline-block;
+		}
+	}
+	.menu.menu-open{
+		transform: translateY(0%);
+	}
+	.about{
+		padding: 10px 0;
+		&__inner{
+			justify-content: start;
+			flex-direction: column;
+		}
+		&__img{
+			max-width: 100%;
+			margin-right: 0;
+			margin-bottom: 25px;
+		}
+		&__content{
+			max-width: 100%;
+			text-align: center;
+		}
+	}
+	.booking__block-link{
+		justify-content: start;
+		flex-direction: column;
+	}
+	.footer{
+		padding: 40px 0;
+		&__inner{
+			flex-direction: column;
+			align-items: center;
+		}
+		&__block{
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		&__text{
+			margin-bottom: 25px;
+		}
+		&__soc-list{
+			justify-content: center;
+		}
+	}
+	.footer__menu{
+		display: none;
+	}
+	.footer__spoilers{
+		display: block;
+	}
+}
+
+@media (max-width: 600px) {
+	.benefits{
+		padding: 50px 0 0;
+		&__block{
+			flex-direction: column-reverse;
+			&:last-child{
+				flex-direction: column;
+			}
+		}
+		&__img{
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
+		&__content{
+			text-align: center;
+		}
+	}
+	.room{
+		&__content-text, &__img{
+			margin-bottom: 20px;
+		}
+		&__content-title{
+			margin-bottom: 10px;
+		}
+	}
+	.testimony__title.title{
+		margin-bottom: 35px;
+	}
+}
+
+@media (max-width: 470px) {
+	.hero__title{
+		font-size: 36px;
+	}
+	.title{
+		font-size: 28px;
+	}
+	.text{
+		font-size: 16px;
+	}
+	.room{
+		align-items: center;
+		&__content{
+			max-width: 384px;
+		}
+		&__img img{
+			max-width: 384px;
+		}
+	}
+	.rooms__list{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.accordion__list{
+		&-btn{
+			padding: 25px;
+		}
+		&-img{
+			width: 30px;
+			height: 30px;
+		}
+		&-title{
+			font-size: 20px;
+		}
+		&-item::before{
+			left: 22px;
+			top: 26px;
+			font-size: 20px;
+		}
+	}
+	.swiper{
+		&-text{
+			margin-bottom: 28px;
+		}
+		&-img{
+			margin-bottom: 30px;
+		}
+	}
+	.testimony__title.title{
+		margin-bottom: 28px;
+	}
+}
+
+@media (max-width: 390px) {
+	.hero__title{
+		font-size: 32px;
+	}
+	.hero__box-img--wrapper:nth-child(2){
+		margin-top: 40px;
+	}
+	.title{
+		font-size: 26px;
+	}
+	.about__btn-link{
+		margin-top: 22px;
+	}
+	.booking{
+		padding: 0 0 15px;
+	}
+	.accordion__list{
+		&-btn{
+			padding: 20px;
+		}
+		&-img{
+			width: 24px;
+			height: 24px;
+		}
+		&-title{
+			font-size: 18px;
+			padding-left: 21px;
+		}
+		&-item::before{
+			font-size: 18px;
+			top: 20px;
+		}
+	}
+}
